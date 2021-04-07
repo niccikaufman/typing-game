@@ -1,47 +1,56 @@
 body {
-  background-color: teal;
+  background-color: #608d8b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d6d3c1' fill-opacity='0.38'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-family: monospace;
+  height: 100%;
 }
 
 #landing-page {
-background-color: grey;
-color: ivory;
-font-family: retro computer;
-height: 50rem;
-text-align: center;
-border-style: double;
-border-color: black;
-display: show;
-}
+  background-color: 608d8b;
+  opacity: 80%;
+  color: goldenrod;
+  font-family: retro computer;
+  text-align: center;
+  border-color: black;
+  display: show;
+  cursor: grab;
+  }
 
 img {
   border-radius: 2rem;
   border-style: double;
   border-width: 1rem;
+  width: 100%;
 }
 
 .page-header {
   text-align: center;
-  background-color: rgb(198, 230, 250);
+  background-color:goldenrod;
   height: 30px;
-  border: black;
+  border: whitesmoke;
   border-style: double;
   display: none;
+  opacity: 80%;
+  color: whitesmoke;
 }
+
 .pseudo-nav-left {
-  height: 1.5rem;
-  background-color: whitesmoke;
+  height: 1.9rem;
+  background-color: lightgrey;
   font-size: small;
   text-align: left;
+  color: black;
+  border-radius: 0;
 }
 
 .pseudo-nav-right {
   float: right;
   font-size: small;
+  opacity: 80%;
 }
 
 .page {
-  background-color: whitesmoke;
+  background-color: rgb(230, 230, 230);
   border: black;
   border-style: double;
   display: none;
@@ -50,8 +59,7 @@ img {
 
 .card {
   display: none;
-  border-color: black;
-  border-style: double;
+  border-color: grey;
 }
 
 #quote {
@@ -59,17 +67,27 @@ img {
   height: 7rem;
   margin-top: 3rem;
   font-size: 15pt;
+  font-family: 'Courier New', Courier, monospace;
   position: relative;
 }
 
-#message, .page-header {
+.page-header {
   font-family: retro computer;
   text-align: center;
+}
+
+#message {
+  font-family: retro computer;
+  text-align: center;
+  font-size: x-large;
+  color:tomato
 }
 
 button {
   font-family: retro computer;
   background-color: blanchedalmond;
+  border-color: blanchedalmond;
+  z-index: 2;
 }
 button:hover {
   color: blue;
@@ -78,6 +96,10 @@ button:hover {
 #landing-button {
  margin-left: 25%;
  margin-right: 25%;
+}
+#landing-button:hover{
+  background-color: white;
+  opacity: 100%;
 }
 
 .highlight {
@@ -93,7 +115,7 @@ button:hover {
 input {
   width: 100%;
   height: 35px;
-  border-color: black;
+  border-color: whitesmoke;
   text-align: justify;
   position: relative;
 }

@@ -16,6 +16,7 @@ const quotes = [
   "If we’re gonna turn this company around, we gotta start cutting the crust off this shit sandwich!",
   "If you’re dealt a bunch of lemons, you got to take those lemons, and stuff them down somebody’s throat until they see yellow.",
 ]
+
 // store the list of words and the index of the word the player is currently typing
 let words = [];
 let wordIndex = 0;
@@ -25,3 +26,32 @@ let startTime = Date.now();
 const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
+
+document.getElementById('start').addEventListener('click', () => {
+  //get a quote
+  const quoteIndex = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[quoteIndex];
+  //put the quote into an array of words
+  words = quote.split('');
+  //reset the word index for tracking
+  wordIndex = 0;
+  
+  // UI updates
+  //create an array of span elements so we can set a class
+  const spanWords = words.map(function(word) {return '<span>${word} </span>'});
+  //convert into a string and set as innerHTML on quote display
+  quoteElement.innerHTML = spanWords.join('');
+  //highlight the first word
+  quoteElement.childNodes[0].className = 'highlight';
+  //clear any prior messages
+  messageElement.innerText = '';
+
+  //set up and clear the text box
+  typedValueElement.value = '';
+  //set focus
+  typedValueElement.focus();
+  //set event handler
+
+  //start timer
+  startTime = new Date().getTime();
+});

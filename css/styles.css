@@ -1,0 +1,22 @@
+body {
+  background-color: teal;
+  font-family: retro computer;
+}
+.page-header {
+  text-align: center;
+  background-color: rgb(198, 230, 250);
+  border: black;
+  border-style: double;
+}
+.page {
+  background-color: whitesmoke;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.error {
+  background-color: lightcoral;
+  border: red;
+}

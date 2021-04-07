@@ -20,13 +20,14 @@ img {
   border-radius: 2rem;
   border-style: double;
   border-width: 1rem;
-  width: 100%;
+  width: 70%;
+  height: 50%;
 }
 
 .page-header {
   text-align: center;
   background-color:goldenrod;
-  height: 30px;
+  height: auto;
   border: whitesmoke;
   border-style: double;
   display: none;
@@ -35,18 +36,12 @@ img {
 }
 
 .pseudo-nav-left {
-  height: 1.9rem;
+  height: auto;
   background-color: lightgrey;
   font-size: small;
   text-align: left;
   color: black;
   border-radius: 0;
-}
-
-.pseudo-nav-right {
-  float: right;
-  font-size: small;
-  opacity: 80%;
 }
 
 .page {
@@ -79,7 +74,7 @@ img {
 #message {
   font-family: retro computer;
   text-align: center;
-  font-size: x-large;
+  font-size: large;
   color:tomato
 }
 

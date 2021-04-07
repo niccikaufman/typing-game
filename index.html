@@ -4,21 +4,32 @@
     <title>Typing Game</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="page-header">
-      <h4>Typing Game</h4>
-    </div>
     <div class="container">
-      <div class="page">
-        <p id="quote-display"></p>
+        <div class="page-header">
+          <h5>The Gang Teaches Typing</h5>
+          <div class="card pseudo-nav-left">
+            <span>| File | </span><span>Lessons | </span><span>Keyboard | </span><span>Progress | </span>
+            <span class="pseudo-nav-right">Help</span>
+          </div>
+        </div>
+        <div class="page">
+        <p id="quote"></p>
         <p id="message"></p>
-        <button type="button" id="start-button">Start</button>
-        <br>
+      </div>
+      <div class="card">
+        <button type="button" class="btn-block" id="start">Start</button>
         <input type="text" aria-label="current word" id="typed-value" />
       </div>
     </div>
+    <div id="landing-page">
+      <h1>The Gang</h1>
+      <img src="images/Its-Always-Sunny-in-Philadelphia-Season-5-Episode-11-4-81bf.jpeg" alt="">
+      <h1>Teaches Typing</h1>
+      <button type="button" id="landing-button">Click to Begin</button>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -10,6 +10,12 @@ body {
 }
 .page {
   background-color: whitesmoke;
+  border: black;
+  border-style: double;
+}
+
+button:hover {
+  color: blue;
 }
 
 .highlight {
